@@ -1,5 +1,6 @@
 # Translator
 This project translates the input text into the chosen language. 
+It uses the AWS TranslateText API
 Directions:
 Download the html and JavaScript files from this git repository 
 Open the html file in a web browser 
