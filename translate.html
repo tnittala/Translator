@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<h2>Translator</h2>
+  <label for="flang">Choose a language:</label><br>
+  <select name="flang" id="flang">
+  <option value="en">English</option>
+  <option value="es">Spanish</option>
+  <option value="fr">French</option>
+  <option value="hi">Hindi</option>
+  </select><br>
+  <label for="tlang">Choose a language to translate to:</label><br>
+  <select name="tlang" id="tlang">
+  <option value="en">English</option>
+  <option value="es">Spanish</option>
+  <option value="fr">French</option>
+  <option value="hi">Hindi</option>
+  </select><br><br>
+  
+  <label for="lang1">First Language:</label><br>
+  <textarea name="lang1" id="lang1" rows="5" cols="40"></textarea><br>
+  <label for="lang2">Second Language:</label><br>
+  <textarea name="lang2" id="lang2" rows="5" cols="40"></textarea><br>
+  <button onClick="trans()">Submit</button>
+
+
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.817.0.min.js"></script>
+
+
+<script type="text/javascript">
+  /*AWS.config.region = 'us-west-2';
+  AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: 'us-west-2:753eb40c-d225-4504-8195-3c884e42c33c',
+  });
+  function trans(){
+      var params = {
+  SourceLanguageCode: $( "#flang option:selected" ).val(), 
+  TargetLanguageCode: $( "#tlang option:selected" ).val(), 
+  Text: document.getElementById('lang1').value, 
+};
+var translate = new AWS.Translate();
+
+translate.translateText(params, function(err, data) {
+  if (err) console.log(err, err.stack); // an error occurred
+  else {   
+  console.log(data); 
+  document.getElementById('lang2').value = data.TranslatedText;
+  }// successful response
+});
+  }*/
+
+</script>
+<script src="C:\Users\vrnit\Documents\Trisha\JavaScript\tranlation.js"></script>
+
+</body>
+</html>
